@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evaluate a news article with Natural Language Processing</title>
+</head>
+
+<body>
+    <header>
+        
+   <div class="container">
+       
+    </header>
+        <main>
+            <div class="row">
+                <h1> Evaluate a news article with Natural Language Processing </h1>
+                <p> Natural Language Processing (NLP) on articles or blogs found on other websites. NLP is the ability of an application to understand the human language, written or oral.</p>
+            <form onsubmit="return Client.handleSubmit(event)">
+                <input id="Article__url" type="url" name="userInput" placeholder="Article link  here!">
+                <input class="submit" type="submit" value="Evaluate my article!">
+            </form>
+            <h1>Results!</h1>
+            <div id="results"></div>
+        </main>
+       </div>
+   </div>
+    <script>
+        // Checking for service workers support
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('SW registered successfuly: ', registration);
+                });
+            });
+        } else {
+            console.log("Service Working not supported");
+        }
+    </script>
+</body>
+
+</html>

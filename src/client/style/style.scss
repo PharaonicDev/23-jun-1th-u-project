@@ -1,0 +1,32 @@
+@import './_mixins';
+@import './_variables';
+@import './form';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    color: $font-color;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15em;
+    min-height: 100vh;
+    background: linear-gradient( to bottom right, rgba(3, 3, 3, 0.93) 0%, rgba(116, 115, 115, 0.929) 8.3%, rgba(241, 240, 241, 0.928) 16.6%, rgba(233, 223, 229, 0.925) 24.6%, rgba(247, 213, 235, 0.921) 32.5%, rgba(185, 178, 184, 0.917) 40.1%, hsla(298.2, 59.29%, 38.03%, 0.913) 47.6%, hsla(280.87, 53.21%, 42.38%, 0.908) 54.8%, hsla(263.16, 48.17%, 46.81%, 0.903) 61.7%, hsla(245.69, 46.2%, 51.19%, 0.898) 68.3%, hsla(230.75, 54.68%, 51.24%, 0.894) 74.5%, hsla(221.81, 65.58%, 49.34%, 0.889) 80.4%, hsla(216.29, 78.16%, 47.7%, 0.886) 86%, hsla(212.84, 88.8%, 46.4%, 0.883) 91.1%, rgba(109, 120, 133, 0.881) 95.8%, hsla(210, 100%, 45.1%, 0.88) 100%);
+    font: 100% $font;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    max-width: 80%;
+    margin: 50px auto;
+}
